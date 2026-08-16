@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Job Applications | GCC CareersHub</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="applications.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            GCC Careers<span>Hub</span>
+        </div>
+
+        <nav>
+
+            <a href="admin-dashboard.html">
+                <i class="fa-solid fa-arrow-left"></i>
+                Dashboard
+            </a>
+
+            <a href="#" id="logoutBtn">
+                Logout
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- Main -->
+
+    <div class="container">
+
+        <div class="page-header">
+
+            <h2>
+                <i class="fa-solid fa-users"></i>
+                Job Applications
+            </h2>
+
+            <p id="jobTitle">
+                Loading Job...
+            </p>
+
+        </div>
+
+        <!-- Applications List -->
+
+        <div id="applicationsContainer">
+
+            <!-- Applications will be loaded here -->
+
+        </div>
+
+    </div>
+
+    <!-- Loading -->
+
+    <div id="loading" class="loading">
+
+        <div class="spinner"></div>
+
+        <p>Loading Applications...</p>
+
+    </div>
+
+    <!-- No Applications -->
+
+    <div id="noApplications" class="empty-state" style="display:none;">
+
+        <i class="fa-solid fa-folder-open"></i>
+
+        <h3>No Applications Yet</h3>
+
+        <p>No candidates have applied for this job.</p>
+
+    </div>
+
+    <!-- Application Card Template -->
+
+    <template id="applicationTemplate">
+
+        <div class="application-card">
+
+            <div class="application-header">
+
+                <h3 class="candidate-name"></h3>
+
+                <span class="status">
+                    Applied
+                </span>
+
+            </div>
+
+            <p>
+                <strong>Email :</strong>
+                <span class="candidate-email"></span>
+            </p>
+
+            <p>
+                <strong>Phone :</strong>
+                <span class="candidate-phone"></span>
+            </p>
+
+            <p>
+                <strong>Applied On :</strong>
+                <span class="applied-date"></span>
+            </p>
+
+            <div class="application-actions">
+
+                <a href="#" target="_blank" class="resume-btn">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    View Resume
+                </a>
+
+            </div>
+
+        </div>
+
+    </template>
+
+    <script type="module" src="applications.js"></script>
+
+</body>
+
+</html>

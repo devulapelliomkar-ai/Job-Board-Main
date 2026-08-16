@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Details | GCC CareersHub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Specific styles just for the details page */
+        .job-header {
+            background: #fff;
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 2rem;
+            border: 1px solid var(--border);
+        }
+        .job-title-large {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+        }
+        .job-body {
+            background: #fff;
+            padding: 3rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+        .job-body h3 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--dark);
+            font-size: 1.5rem;
+        }
+        .apply-now-btn {
+            background: var(--primary);
+            color: var(--surface);
+            padding: 1rem 2.5rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 2rem;
+            transition: var(--transition);
+        }
+        .apply-now-btn:hover {
+            background: var(--primary-hover);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">GCC Careers<span>Hub</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Candidate Login</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div id="loading" class="loading" style="display: flex;">
+            <div class="spinner"></div>
+            <p>Loading job details...</p>
+        </div>
+
+        <div id="job-content" style="display: none;">
+            
+            <div class="job-header">
+                <span id="detail-type" class="badge" style="position: relative; top: 0; right: 0; margin-bottom: 1rem; display: inline-block;">Full-Time</span>
+                <h1 id="detail-title" class="job-title-large">Job Title</h1>
+                <div class="company" style="font-size: 1.2rem; margin-bottom: 1.5rem;">
+                    🏢 <strong id="detail-company">Company Name</strong>
+                </div>
+                
+                <div class="job-details-meta" style="flex-direction: row; flex-wrap: wrap; gap: 2rem;">
+                    <div class="meta-item">
+                        <span class="meta-icon">📍</span>
+                        <span id="detail-location">Location</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">💰</span>
+                        <span id="detail-salary">Salary</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-icon">⭐</span>
+                        <span id="detail-experience">Experience</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job-body">
+                <h3>Job Description</h3>
+                <p id="detail-description" style="white-space: pre-wrap; color: var(--text-main);">Loading description...</p>
+
+                <h3>Requirements</h3>
+                <p id="detail-requirements" style="white-space: pre-wrap; color: var(--text-main);">Loading requirements...</p>
+
+<button id="apply-btn" class="apply-now-btn" style="border:none; cursor:pointer;">Apply Now</button>            </div>
+
+        </div>
+    </main>
+
+    <script type="module" src="job-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+:root {
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary: #0ea5e9;
+    --dark: #0f172a;
+    --text-main: #334155;
+    --text-muted: #64748b;
+    --bg-main: #f8fafc;
+    --surface: #ffffff;
+    --border: #e2e8f0;
+    --radius: 12px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 10px 25px rgba(0,0,0,0.12);
+    --transition: all .3s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter',sans-serif;
+}
+
+body{
+    background:var(--bg-main);
+    color:var(--text-main);
+}
+
+/* ================= Navbar ================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 6%;
+    background:#fff;
+    border-bottom:1px solid var(--border);
+    position:sticky;
+    top:0;
+    z-index:100;
+    box-shadow:var(--shadow-sm);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    color:var(--dark);
+}
+
+.logo span{
+    color:var(--primary);
+}
+
+.navbar nav{
+    display:flex;
+    gap:30px;
+}
+
+.navbar nav a{
+    text-decoration:none;
+    color:var(--text-muted);
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav .active{
+    color:var(--primary);
+}
+
+/* ================= Login Section ================= */
+
+.login-section{
+    min-height:calc(100vh - 80px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+.login-card{
+
+    width:100%;
+    max-width:450px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.login-card h2{
+
+    text-align:center;
+
+    color:var(--dark);
+
+    margin-bottom:10px;
+
+}
+
+.subtitle{
+
+    text-align:center;
+
+    color:var(--text-muted);
+
+    margin-bottom:30px;
+
+}
+
+/* ================= Inputs ================= */
+
+.input-group{
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid var(--border);
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.input-group input:focus{
+
+    border-color:var(--primary);
+
+}
+
+/* Password */
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:45px;
+
+}
+
+.password-box i{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#777;
+
+    cursor:pointer;
+
+}
+
+/* ================= Button ================= */
+
+.login-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ================= Links ================= */
+
+.links{
+
+    text-align:right;
+
+    margin:15px 0;
+
+}
+
+.links a{
+
+    text-decoration:none;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+}
+
+hr{
+
+    margin:25px 0;
+
+    border:none;
+
+    border-top:1px solid var(--border);
+
+}
+
+.register-box{
+
+    text-align:center;
+
+}
+
+.register-box p{
+
+    color:var(--text-muted);
+
+    margin-bottom:15px;
+
+}
+
+.register-btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:var(--secondary);
+
+    color:#fff;
+
+    padding:12px 25px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+.register-btn:hover{
+
+    background:#0284c7;
+
+}
+
+/* ================= Loading ================= */
+
+.loading{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.85);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:999;
+
+}
+
+.spinner{
+
+    width:45px;
+
+    height:45px;
+
+    border:5px solid #ddd;
+
+    border-top:5px solid var(--primary);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+.loading p{
+
+    margin-top:15px;
+
+    font-weight:600;
+
+}
+
+@keyframes spin{
+
+    100%{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:600px){
+
+    .navbar{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .login-card{
+
+        padding:30px 20px;
+
+    }
+
+}

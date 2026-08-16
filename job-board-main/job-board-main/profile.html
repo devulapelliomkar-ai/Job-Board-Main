@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile | GCC CareersHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="profile.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            GCC Careers<span>Hub</span>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="index.html">Jobs</a>
+
+            <a href="profile.html" class="active">My Profile</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Profile -->
+
+    <section class="profile-section">
+
+        <div class="profile-card">
+
+            <div class="profile-header">
+
+                <i class="fa-solid fa-circle-user profile-icon"></i>
+
+                <h2 id="userName">Candidate Profile</h2>
+
+                <p id="userEmail"></p>
+
+            </div>
+
+            <form id="profileForm">
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="fullName">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Email</label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            readonly>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Mobile Number</label>
+
+                        <input
+                            type="text"
+                            id="mobile">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Country</label>
+
+                        <input
+                            type="text"
+                            id="country">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Education</label>
+
+                        <input
+                            type="text"
+                            id="education">
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Experience</label>
+
+                        <input
+                            type="text"
+                            id="experience">
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Skills</label>
+
+                    <textarea
+                        id="skills"
+                        rows="4"></textarea>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Resume</label>
+
+                   <a href="#" id="resumeLink" class="resume-btn">
+    Download Resume
+</a>
+
+                </div>
+
+                <div class="button-group">
+
+                    <button
+                        type="submit"
+                        class="save-btn">
+
+                        <i class="fa-solid fa-floppy-disk"></i>
+
+                        Save Changes
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="logoutBtn"
+                        class="logout-btn">
+
+                        <i class="fa-solid fa-right-from-bracket"></i>
+
+                        Logout
+
+                    </button>
+
+                    <button
+                        type="button"
+                        id="deleteBtn"
+                        class="delete-btn">
+
+                        <i class="fa-solid fa-trash"></i>
+
+                        Delete Account
+
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Loading -->
+
+    <div id="loading" class="loading">
+
+        <div class="spinner"></div>
+
+        <p>Please wait...</p>
+
+    </div>
+
+    <script type="module" src="profile.js"></script>
+
+</body>
+
+</html>

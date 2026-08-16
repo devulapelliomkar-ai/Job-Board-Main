@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create Account | GCC CareersHub</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="register.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            GCC Careers<span>Hub</span>
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="login.html">Login</a>
+
+            <a href="register.html" class="active">Register</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Register Section -->
+
+    <section class="register-section">
+
+        <div class="register-card">
+
+            <h2>Create Your Account</h2>
+
+            <p class="subtitle">
+                Register to apply for jobs and manage your career profile.
+            </p>
+
+            <form id="registerForm">
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Full Name</label>
+
+                        <input type="text"
+                            id="fullName"
+                            placeholder="Enter Full Name"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Email</label>
+
+                        <input type="email"
+                            id="email"
+                            placeholder="Enter Email"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Password</label>
+
+                        <input type="password"
+                            id="password"
+                            placeholder="Enter Password"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Confirm Password</label>
+
+                        <input type="password"
+                            id="confirmPassword"
+                            placeholder="Confirm Password"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Mobile Number</label>
+
+                        <input type="tel"
+                            id="mobile"
+                            placeholder="Enter Mobile Number"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Country</label>
+
+                        <input type="text"
+                            id="country"
+                            placeholder="Enter Country"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-group">
+
+                        <label>Highest Qualification</label>
+
+                        <input type="text"
+                            id="education"
+                            placeholder="B.Tech / MCA / M.Tech"
+                            required>
+
+                    </div>
+
+                    <div class="input-group">
+
+                        <label>Experience</label>
+
+                        <input type="text"
+                            id="experience"
+                            placeholder="Fresher / 2 Years"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Skills</label>
+
+                    <textarea
+                        id="skills"
+                        rows="4"
+                        placeholder="Example: HTML, CSS, JavaScript, Python, SQL"
+                        required></textarea>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Upload Resume (PDF)</label>
+
+                    <input
+                        type="file"
+                        id="resume"
+                        accept=".pdf"
+                        required>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="register-btn">
+
+                    Create Account
+
+                </button>
+
+            </form>
+
+            <div class="login-link">
+
+                Already have an account?
+
+                <a href="login.html">
+
+                    Login Here
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Loading -->
+
+    <div id="loading" class="loading">
+
+        <div class="spinner"></div>
+
+        <p>Creating Account...</p>
+
+    </div>
+
+    <script type="module" src="register.js"></script>
+
+</body>
+
+</html>

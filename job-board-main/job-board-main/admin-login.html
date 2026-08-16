@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin Login | GCC CareersHub</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+
+        <div class="logo">
+
+            GCC Careers<span>Hub</span>
+
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="jobs.html">Jobs</a>
+
+            <a href="login.html">Candidate Login</a>
+
+            <a href="admin-login.html" class="active">Admin Login</a>
+
+        </nav>
+
+    </header>
+
+    <!-- Admin Login -->
+
+    <section class="login-section">
+
+        <div class="login-card">
+
+            <div class="admin-icon">
+
+                <i class="fa-solid fa-user-shield"></i>
+
+            </div>
+
+            <h2>Administrator Login</h2>
+
+            <p class="subtitle">
+
+                Login to manage job postings and candidate applications.
+
+            </p>
+
+            <form id="adminLoginForm">
+
+                <div class="input-group">
+
+                    <label>Email Address</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter Admin Email"
+                        required>
+
+                </div>
+
+                <div class="input-group">
+
+                    <label>Password</label>
+
+                    <div class="password-box">
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter Password"
+                            required>
+
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+
+                    </div>
+
+                </div>
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Login
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- Loading -->
+
+    <div id="loading" class="loading">
+
+        <div class="spinner"></div>
+
+        <p>Logging In...</p>
+
+    </div>
+
+    <script type="module" src="admin-login.js"></script>
+
+</body>
+
+</html>

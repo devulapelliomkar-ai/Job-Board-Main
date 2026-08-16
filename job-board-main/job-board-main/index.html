@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerHub | Find Your Dream Job</title>
+    <!-- Modern Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">GCC Careers<span>Hub</span></div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="login.html" id="auth-link">Candidate Login</a>
+            <a href="admin-login.html" class="btn-outline">Admin Panel</a>
+        </nav>
+    </header>
+
+    <!-- Hero / Search Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Your Next Big Opportunity</h1>
+            <p>Connect with top companies and find a role that matches your passion and skills.</p>
+            
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Job title, keywords, or company...">
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                    <option value="IT & Software">IT & Software</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Management">Management</option>
+                </select>
+                <button id="search-btn">Search Jobs</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container">
+        <div class="section-header">
+            <h2>Featured Openings</h2>
+            <p>Browse our latest job postings</p>
+        </div>
+        
+        <!-- Loading State Indicator -->
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading jobs...</p>
+        </div>
+
+        <!-- Dynamic Job Cards Container -->
+        <div id="job-listings" class="job-grid"></div>
+    </main>
+
+    <!-- Firebase SDK Modules & Custom Application Scripts -->
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
