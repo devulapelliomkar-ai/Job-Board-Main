@@ -77,7 +77,7 @@ Advanced analytics dashboard for admin
 Role-based access control improvements
 👨‍💻 Author
 
-Anudeep Reddy
+Omkar
 
 📁 Project Structure
 🏠 Home Page
